@@ -1,0 +1,15 @@
+.collor {
+  color: rgb(200,30,170);
+}
+
+.collor1 {
+  color: green;
+}
+
+.ital {
+  font-style: italic;
+}
+
+* {
+  font-family: sans-serif;
+}
