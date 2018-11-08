@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Raph;
+    src: url(../font/RaphLanokFuture.ttf);
+}
+
+body {
+  font-family: Raph, Verdana;
+}
+
+p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.calendar {
+  height: 100px;
+  /* max-width: 730px; */
+  min-width: 1090px;
+}
+
+.day {
+  float: left;
+  background-color: white;
+  box-shadow: 2px 2px 2px grey, 0px 0px 1px grey;
+  margin: 2px;
+  width: 150px;
+  height: 150px;
+}
+
+.monday {
+  clear: both;
+}
+
+.weekend {
+  background-color: orange;
+}
+
+.event {
+  background-color: rgb(185,177,219);
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: arial;
+  font-size: 12px;
+}
+
+.event:hover {
+  background-color: rgb(164,196,81);
+}
