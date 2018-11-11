@@ -1,0 +1,27 @@
+.legend-color {
+  background-color: grey;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: grey;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: grey;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: grey;
+}
+
+span {
+  color: black;
+}
+
+.no-border {
+  border: 0px;
+  border-radius: 5px;
+}

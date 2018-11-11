@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/master.css"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <form class="" action="action_page.php" method="post">
+        <div>
+          <fieldset class="no-border red lighten-3">
+            <legend class="legend-color">Jūsų informacija</legend>
+              <div class="row">
+                <div class="col s2 m1 l1 xl1">
+                  <p>Vardas</p>
+                </div>
+                <div class="col s6 m4 l4 xl4">
+                  <p><input type="text" name="vardas" value="" required></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2 m1 l1 xl1">
+                  <p>Pavardė:</p>
+                </div>
+                <div class="col s6 m4 l4 xl4">
+                  <p><input type="text" name="pavarde" value="" required></p>
+                </div>
+              </div>
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset class="no-border red lighten-3">
+            <legend class="legend-color">Klausimai</legend>
+
+              <div class="row">
+                <div class="col s5 m3 l3 xl3">
+                  <h5>Kaip sužinojote apie mus?</h5>
+                </div>
+                <div class="col s6 m4 l3 xl3">
+                  <select>
+                    <option value="1">Google</option>
+                    <option value="2">Televizija</option>
+                  </select>
+                </div>
+              </div>
+            <h5>Ar apsilankysite vėl?</h5>
+            <form action="#">
+              <p>
+                <label for="taip">
+                  <input name="group1" type="radio" checked id="taip" />
+                  <span>Taip</span>
+                </label>
+                <label for="ne">
+                  <input name="group1" type="radio" checked id="ne"/>
+                  <span>Ne</span>
+                </label>
+                <label for="galbut">
+                  <input name="group1" type="radio" checked id="galbut"/>
+                  <span>Galbut</span>
+                </label>
+              </p>
+            </form>
+            <h5>Ką manote apie kursą?</h5>
+
+            <textarea name="name" rows="8" cols="80" placeholder="Rašykite viską ką galvojate" required></textarea>
+            <p></p>
+
+            <h5>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esatę susipažinę:</h5>
+            <table>
+              <tr>
+                <td>
+                    <label for="c#">
+                      <input type="checkbox" name="language" value="c#" id="c#"/>
+                      <span>C#</span>
+                    </label>
+                </td>
+                <td>
+                  <label for="java">
+                    <input type="checkbox" name="language" value="c#" id="java"/>
+                    <span>Java</span>
+                  </label>
+                </td>
+                <td>
+                  <label for="php">
+                    <input type="checkbox" name="language" value="c#" id="php"/>
+                    <span>PHP</span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="html">
+                    <input type="checkbox" name="language" value="c#" id="html"/>
+                    <span>HTML</span>
+                  </label>
+                </td>
+                <td>
+                  <label for="css">
+                    <input type="checkbox" name="language" value="c#" id="css"/>
+                    <span>CSS</span>
+                  </label>
+                </td>
+                <td>
+                  <label for="jscript">
+                    <input type="checkbox" name="language" value="c#" id="jscript"/>
+                    <span>JavaScript</span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="python">
+                    <input type="checkbox" name="language" value="c#" id="python"/>
+                    <span>Python</span>
+                  </label>
+                </td>
+                <td>
+                  <label for="ruby">
+                    <input type="checkbox" name="language" value="c#" id="ruby"/>
+                    <span>Ruby</span>
+                  </label>
+                </td>
+              </tr>
+            </table>
+            <br>
+            <input type="submit" name="" value="Siųsti">
+          </fieldset>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+             $('select').formSelect();
+            });
+        </script>
+      </form>
+    </body>
+  </html>
