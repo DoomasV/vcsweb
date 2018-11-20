@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dekoartele</title>
+    <style media="screen">
+      .card-content {
+        height: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper purple lighten-2">
+        <a href="index.html" class="brand-logo"> <img src=images/logo1.jpg" " alt=""> </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="nav-fontf"><a href="index.html">Pagrindinis</a></li>
+          <li><a href="gallery.html">Galerija</a></li>
+          <li><a href="contacts.html">Kontaktai</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li class="nav-fontf"><a href="index.html">Pagrindinis</a></li>
+      <li class="nav-fontf"><a href="gallery.html">Galerija</a></li>
+      <li class="nav-fontf"><a href="contacts.html">Kontaktai</a></li>
+    </ul>
+    <main>
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/parallax1.jpg"></div>
+      </div>
+      <div class="section purple lighten-5">
+        <div class="container">
+          <div class="row">
+
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/dezute-1.jpg">
+                  <span class="card-title">Dėžutės</span>
+                </div>
+                <div class="card-content">
+                  <p>Išlankstomos sveikinimų dėžutės</p>
+                </div>
+                <div class="card-action">
+                  <a href="gallery.html">Daugiau</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4 img-md-1">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/atvirute-1.jpg">
+                  <span class="card-title">Atvirutės</span>
+                </div>
+                <div class="card-content">
+                  <p>Atvirutės šventiniams sveikinimams</p>
+                </div>
+                <div class="card-action">
+                  <a href="gallery.html">Daugiau</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/p-atvirute-1.jpg">
+                  <span class="card-title">Atvirutės pinigams</span>
+                </div>
+                <div class="card-content">
+                  <p>Atvirutės su vidine kišenėle pinigams idėti</p>
+                </div>
+                <div class="card-action">
+                  <a href="gallery.html">Daugiau</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/parallax1.jpg">a</div>
+      </div>
+    </main>
+
+    <footer class="page-footer purple lighten-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Kontaktai</h5>
+            <p class="grey-text text-lighten-4">
+              <ul>
+                <li>Tel.: +370 614 04142</li>
+                <li>Arba atsiūskite mums <a href="contacts.html" style="color:#ffcdd2;">žinutę</a></li>
+              </ul>
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Menu</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="gallery.html">Galerija</a></li>
+              <li><a class="grey-text text-lighten-3" href="contacts.html">Kontaktai</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Website by DomVai
+        <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.parallax').parallax();
+      });
+    </script>
+  </body>
+</html>

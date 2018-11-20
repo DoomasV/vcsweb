@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/style.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Dekoartele</title>
+    </head>
+
+    <body>
+      <nav class="purple lighten-2">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"><img src="images/logo1.jpg" alt=""></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Pagrindinis</a></li>
+            <li><a href="gallery.html">Galerija</a></li>
+            <li><a href="contacts.html">Kontaktai</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Pagrindinis</a></li>
+        <li><a href="gallery.html">Galerija</a></li>
+        <li><a href="contacts.html">Kontaktai</a></li>
+      </ul>
+
+      <main class="purple lighten-5">
+        <div class="container">
+          <h3>Kontaktai</h3>
+          <p>Norėdami sužinoti daugiau informacijos skambinkite telefonu arba parašykite mums žinutę:</p>
+        </div>
+        <div class="container container-submit">
+          <form action="action_page.php">
+
+            <label for="fname">Vardas</label>
+            <input type="text" id="fname" name="firstname" placeholder="Įrašykite savo vardą">
+
+            <label for="lname">El. paštas</label>
+            <input type="text" id="lname" name="lastname" placeholder="Įrašykite savo el. pašto adresą">
+
+            <label for="subject">Antraštė</label>
+            <textarea id="subject" name="subject" placeholder="Įrašykite antraštę" style="height:43px"></textarea>
+
+            <label for="subject">Tekstas</label>
+            <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+
+            <input type="submit" value="Siųsti" class="purple lighten-2">
+
+          </form>
+        </div>
+      </main>
+
+      <footer class="page-footer purple lighten-2">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2300.617671631844!2d24.677696416080572!3d54.78668738030604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e766df9da0cdc3%3A0x6d6b53d1f0eca585!2sPergal%C4%97s+g.+49%2C+Elektr%C4%97nai+26125!5e0!3m2!1slt!2slt!4v1542651834779" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Menu</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="index.html">Pagrindinis</a></li>
+                <li><a class="grey-text text-lighten-3" href="gallery.html">Galerija</a></li>
+              </ul>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Kontaktai</h5>
+              <p class="grey-text text-lighten-4">
+                <ul>
+                  <li>Tel.: +370 614 04142</li>
+                  <li>Arba atsiūskite mums <a href="contacts.html" style="color:#ffcdd2;">žinutę</a></li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          Website by DomVai
+          </div>
+        </div>
+      </footer>
+      <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+          });
+      </script>
+    </body>
+  </html>
