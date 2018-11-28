@@ -4,7 +4,8 @@
     'Vašingtonas',
     'Maskva',
     'Londonas'
-  ]
+  ];
+  print_r(implode(' ', $cities4));
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,6 @@
   <body>
     <ul>
       <?php
-        // $miestai = count($cities4)
         for ($i=0; $i < count($cities4); $i++) {
           echo "<li>$cities4[$i]</li>";
         };
@@ -26,7 +26,7 @@
       <?php
         foreach ($cities4 as $miestas) {
           echo "<li>$miestas</li>";
-        }
+        };
       ?>
     </ul>
   </body>
