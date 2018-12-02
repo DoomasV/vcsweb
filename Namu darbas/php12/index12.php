@@ -11,8 +11,10 @@
             Input surname: <input type="text" name="surname">
             <input type="submit" value="Submit">
           </form>
-      <?php } else {
-                  echo('Name: '.$_POST['name'].' '.$_POST['surname']);
+      <?php } elseif (isset($_POST['Submit']) || empty($_POST['name']) || empty($_POST['surname'])) {
+                echo 'Fill in both fields';
+              } else {
+                  echo 'Name and surname: '.$_POST['name'].' '.$_POST['surname'];
               };
       ?>
   </body>
