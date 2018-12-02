@@ -5,6 +5,6 @@
     return $area;
   };
   $result = square(10,11);
-  echo($result);
+  echo $result;
 
 ?>
