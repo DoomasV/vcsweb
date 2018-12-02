@@ -15,9 +15,9 @@
   </head>
   <body>
     <ul>
-      <li><?php echo('Gyventojų skaičius: '.$cities3['Londonas'][0].' mln.'); ?></li>
-      <li><?php echo('Įkurtas: '.$cities3['Londonas'][1].' m.'); ?></li>
-      <li><?php echo('Šalis: '.$cities3['Londonas'][2]); ?></li>
+      <li><?php echo 'Gyventojų skaičius: '.$cities3['Londonas'][0].' mln.'; ?></li>
+      <li><?php echo 'Įkurtas: '.$cities3['Londonas'][1].' m.'; ?></li>
+      <li><?php echo 'Šalis: '.$cities3['Londonas'][2]; ?></li>
     </ul>
   </body>
 </html>
