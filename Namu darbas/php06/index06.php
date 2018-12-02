@@ -7,10 +7,10 @@
   $cities3['Londonas'] = array(8.6, 43, 'Anglija');
   $metai = 1774;
   if ($metai >= $cities3['Vasingtonas'][1]) {
-    echo('Vašingtonas yra JAV sostinė.');
-  } elseif ($metai >= 1774) {
-    echo('JAV sostinė vis dar Filadelfijoje.');
+    echo 'Vašingtonas yra JAV sostinė.';
+  } elseif ($metai == 1774) {
+    echo 'JAV sostinė vis dar Filadelfijoje.';
   } else {
-    echo('Liko '.($cities3['Vasingtonas'][1] - $metai).' metai (-ų) iki Vašingtono įkūrimo.');
+    echo 'Liko '.($cities3['Vasingtonas'][1] - $metai).' metai (-ų) iki Vašingtono įkūrimo.';
   }
 ?>
