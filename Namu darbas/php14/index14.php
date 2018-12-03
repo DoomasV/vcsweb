@@ -1,10 +1,8 @@
 <?php
   $dabartiniaiMetai = date('Y');
-  $sukurimoMetai = 2020;
+  $sukurimoMetai = 2017;
   function sukurimoMetai($x, $y) {
-    if ($x == $y ) {
-      return $x;
-    } elseif ($x < $y) {
+    if ($x <= $y ) {
       return $x;
     } else {
       return $y.'-'.$x;
