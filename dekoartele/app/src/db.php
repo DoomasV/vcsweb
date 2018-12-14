@@ -10,7 +10,5 @@
     echo 'Klaida'.$mysqli->connect_error.'\n';
     exit();
   }
-
   mysqli_query($mysqli, "INSERT INTO klientai (vardas, email, message) VALUES('$_POST[vardas]', '$_POST[email]', '$_POST[message]')");
-
   ?>

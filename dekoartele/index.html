@@ -7,33 +7,74 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Dekoartele</title>
-
+    <style media="screen">
+      @media only screen and (max-width:600px) {
+        .parallax-container {
+          height: 1950px;
+        }
+      }
+      @media only screen and (min-width:601px) {
+        .parallax-container {
+          height: 1250px;
+        }
+        .carousel .carousel-item {
+          width: 200px !important;
+          height: 200px !important;
+        }
+      }
+      @media only screen and (min-width:993px) {
+        .parallax-container {
+          height: 1150px;
+        }
+        .carousel .carousel-item {
+          width: 300px !important;
+          height: 300px !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="parallax-container">
-      <div class="parallax"><img src="images/parallax-sm.jpg"></div>
-      <nav class="navTop purple lighten-5">
-        <div class="nav-wrapper purple lighten-2">
-          <a href="index.html" class="brand-logo"> <img src="images/logo1.jpg" alt=""> </a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Pagrindinis</a></li>
-            <li><a href="gallery.html">Galerija</a></li>
-            <li><a href="contacts.php">Kontaktai</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <ul class="sidenav" id="mobile-demo">
-        <li class="nav-fontf"><a href="index.html">Pagrindinis</a></li>
-        <li class="nav-fontf"><a href="gallery.html">Galerija</a></li>
-        <li class="nav-fontf"><a href="contacts.php">Kontaktai</a></li>
-      </ul>
+      <div class="parallax"><img src="images/parallax-sm.jpg">
+      </div>
+      <!-- Menu navigacija -->
+      <div class="container-nav">
+        <nav>
+          <div class="nav-wrapper brown darken-4">
+            <a href="index.html" class="brand-logo"> <img class="circle" src="images/dlogo.png" alt=""> </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Pagrindinis</a></li>
+              <li><a href="gallery.html">Galerija</a></li>
+              <li><a href="contacts.php">Kontaktai</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Navigacija maziems ekranams -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="index.html">Pagrindinis</a></li>
+          <li><a href="gallery.html">Galerija</a></li>
+          <li><a href="contacts.php">Kontaktai</a></li>
+        </ul>
+      </div>
 
       <main>
-
-        <div class="section purple lighten-5">
-          <div class="container">
+        <!-- Nuotrauku Karusele -->
+        <div class="section">
+          <div class="carousel">
+            <a class="carousel-item" href="#three!"><img src="images/dezute-1.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="images/dezute-2.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="images/dezute-3.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="images/p-atvirute-1.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="images/dezute-1.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="images/dezute-2.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="images/dezute-3.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="images/p-atvirute-1.jpg"></a>
+          </div>
+        </div>
+        <!-- Dezutes su nuorodomis i galerija -->
+        <div class="section">
+          <div class="container-main brown lighten-4">
             <div class="row">
 
               <div class="col s12 m4">
@@ -85,23 +126,22 @@
           </div>
         </div>
       </main>
-    <!-- <div class="parallax-container"> -->
-      <!-- <div class="parallax"><img src="images/parallax1.jpg"></div> -->
-      <footer class="page-footer purple lighten-2">
-        <div class="container">
+      <!-- Kontaktu menu juosta -->
+      <footer class="page-footer">
+        <div class="container-footer brown darken-3">
           <div class="row">
 
-            <div class="col l6 s12">
+            <div class="col l6 s12 footer-menu">
               <h5 class="white-text">Kontaktai</h5>
               <p class="grey-text text-lighten-4">
                 <ul>
-                  <li>Tel.: +370 614 04142</li>
-                  <li>Arba atsiūskite mums <a href="contacts.php" style="color:#ffcdd2;">žinutę</a></li>
+                  <li>Tel.: <a href="tel: +370 614 04142" class="link-color">+370 614 04142</a></li>
+                  <li>Arba atsiūskite mums <a href="contacts.php" class="link-color">žinutę</a></li>
                 </ul>
               </p>
             </div>
 
-            <div class="col l4 offset-l2 s12">
+            <div class="col l4 offset-l2 s12 footer-menu">
               <h5 class="white-text">Menu</h5>
               <ul>
                 <li><a class="grey-text text-lighten-3" href="gallery.html">Galerija</a></li>
@@ -110,24 +150,27 @@
             </div>
 
           </div>
-        </div>
 
-        <div class="footer-copyright">
-          <div class="container">
-          Website by DomVai
-          <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+          <div class="footer-copyright brown darken-4">
+            <div class="container-footer">
+            <p>Website by <a href="mailto:vaisvis@gmail.com" class="link-color">Dominykas</a></p>
+            </div>
           </div>
+
         </div>
       </footer>
-    <!-- </div> -->
     </div>
 
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.parallax').parallax();
+        $('.carousel').carousel();
+        setInterval(function() {
+          $('.carousel').carousel('next');
+        }, 2000);
       });
     </script>
   </body>
